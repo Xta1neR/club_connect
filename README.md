@@ -4,19 +4,7 @@
 
 ## Project Name : Club Connect
 
-###  - Which problem Project is Solving ?
-
-There are may Student Organizations / Departments that have a large number of students according to different work profiles or Domains,thus managing everyone's data at the same time can become a hectic task, also finding Volunteers or Co-ordinator for any specific task inthe time of need becomes difficult. 
-
-<hr>
-
-### - What are existing similar solutions ?
-
- ViralFission (https://www.viralfission.com/) = This is a similar platform but at a very vast level as they have state specific volunteers and it focuses more on external brand promotions for third party clients. While this website focuses more on university level and gives a better connection segment with in the campus and provides more details and data to the In-campus Organization leader, coordinators and Mentors.
-
-<hr>
-
-### - How do you want to solve it ?
+### STRUCTURE
 The main framework behind solving the problem statement is as below : 
 
 ![alt text](https://github.com/Xta1neR/mern_bootcamp_2024/blob/main/02.Capstone_Project_Details/Rituraj_ClubConnect/readme%20assets/Strategy%20and%20planning.png)
@@ -51,7 +39,7 @@ The above Flowchart explains what is the hierarchy of Student Organization Clubs
 
 <hr>
 
-### - List of features you want to implement.
+### - FEATURES
 
 - **Auto scheduling of Recruitment Drive** : The recruitment form automatically starts accepting applications from 1st of every month to 7th of every month, and after 7th no one access the recruitment form or apply to any organization.
 
