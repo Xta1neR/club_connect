@@ -1,0 +1,163 @@
+  {
+    "routes": [
+      
+      {
+        "path": "/recruits/registration",
+        "method": "POST",
+        "handler": "RecruitController.register",
+        "description": "Recruit registration endpoint"
+      },
+
+      {
+        "path": "/recruits/interview/schedule",
+        "method": "POST",
+        "handler": "RecruitController.scheduleInterview",
+        "description": "Recruit interview scheduling endpoint"
+      },
+
+      {
+        "path": "/recruits/domain-selection",
+        "method": "POST",
+        "handler": "RecruitController.selectDomain",
+        "description": "Recruit domain selection endpoint"
+      }
+      
+      
+      
+
+
+
+  
+      {
+        "path": "/members/announcements",
+        "method": "GET",
+        "handler": "MemberController.getAnnouncements",
+        "description": "Get announcements for members"
+      },
+
+      {
+        "path": "/members/react",
+        "method": "POST",
+        "handler": "MemberController.reactToAnnouncement",
+        "description": "React to an announcement"
+      },
+      
+      
+      
+
+
+
+
+
+      {
+        "path": "/domain-heads/students",
+        "method": "GET",
+        "handler": "DomainHeadController.getAllStudents",
+        "description": "Get all students in the domain"
+      },
+
+      {
+        "path": "/domain-heads/interview/accept",
+        "method": "GET",
+        "handler": "DomainHeadController.acceptInterviewSlot",
+        "description": "Accept interview slot selected by the  recruit"
+      },
+
+      {
+        "path": "/domain-heads/announcements",
+        "method": "POST",
+        "handler": "DomainHeadController.makeAnnouncement",
+        "description": "Make an announcement in the domain"
+      },
+      
+      
+      
+
+
+
+
+      {
+        "path": "/ceos/students",
+        "method": "GET",
+        "handler": "CEOController.getAllStudents",
+        "description": "Get all students in the organization"
+      },
+
+      {
+        "path": "/ceos/announcements",
+        "method": "POST",
+        "handler": "CEOController.makeAnnouncement",
+        "description": "Make an announcement in the organization"
+      },
+
+      {
+        "path": "/ceos/event/post",
+        "method": "POST",
+        "handler": "CEOController.postEventDetails",
+        "description": "Post event details"
+      },
+
+      {
+        "path": "/ceos/event/edit",
+        "method": "PUT",
+        "handler": "CEOController.editEventDetails",
+        "description": "Edit event details"
+      },
+
+      {
+        "path": "/ceos/event/delete",
+        "method": "DELETE",
+        "handler": "CEOController.deleteEventDetails",
+        "description": "Delete event details"
+      },
+      
+      
+      
+
+
+
+
+
+      {
+        "path": "/mentors/students",
+        "method": "GET",
+        "handler": "MentorController.getAllStudents",
+        "description": "Get all students across organizations"
+      },
+      {
+        "path": "/mentors/announcements",
+        "method": "POST",
+        "handler": "MentorController.makeAnnouncement",
+        "description": "Make a global announcement"
+      },
+
+      {
+        "path": "/mentors/event/edit",
+        "method": "PUT",
+        "handler": "MentorController.editEventDetails",
+        "description": "Edit event details"
+      },
+
+      {
+        "path": "/mentors/event/delete",
+        "method": "DELETE",
+        "handler": "MentorController.deleteEventDetails",
+        "description": "Delete event details"
+      },
+      
+    
+      
+
+
+
+
+      
+      {
+        "path": "/announcements/group",
+        "method": "POST",
+        "handler": "AnnouncementController.groupAnnouncement",
+        "description": "Make a group announcement"
+      }
+    ]
+  }
+  
