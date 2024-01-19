@@ -20,14 +20,14 @@
         "method": "POST",
         "handler": "RecruitController.selectDomain",
         "description": "Recruit domain selection endpoint"
-      },w
+      }
       
       
       
 
 
 
-
+  
       {
         "path": "/members/announcements",
         "method": "GET",
@@ -58,9 +58,9 @@
 
       {
         "path": "/domain-heads/interview/accept",
-        "method": "POST",
+        "method": "GET",
         "handler": "DomainHeadController.acceptInterviewSlot",
-        "description": "Accept interview slot for recruit"
+        "description": "Accept interview slot selected by the  recruit"
       },
 
       {
