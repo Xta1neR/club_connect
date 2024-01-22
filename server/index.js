@@ -1,15 +1,29 @@
-console.log("Server is up and running");
-
-const express = require("express"); // modules for node         commonjs
+const express = require("express");
 const app = express();
-const port = 8000;
+const userRouter = require("./routes/userRoutes");
+const noteRouter = require("./routes/noteRoutes");
 
-//Create server from HTTP
+const mongoose = require("mongoose");
 
-app.get("/course", (req, res) => {
-    res.status(200).send("Hello World");
+app.use(express.json());
+
+app.use("/users", userRouter);
+app.use("/notes",noteRouter);
+
+app.get("/",(req,res)=>{
+    res.send("Hello")
+});
+
+mongoose.connect("mongodb+srv://goswamirituraj03:Nlpu2021!@cluster0.2vyq87q.mongodb.net/?retryWrites=true&w=majority")
+.then(()=>{
+    app.listen(5000, ()=>{
+        console.log("server started on port 5000");
+    })
+})
+.catch((error)=>{
+    console.log(error);
 })
 
-app.listen(port, () => {
-    console.log('App running on $(port)')
+app.listen(5000,()=>{
+    console.log("server is running on port 5000");
 })
