@@ -1,0 +1,331 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  --first-color: #fe2d1f;
+  --second-color: #f7bc08;
+  --first-color-alt: #00bfeb;
+  --title-color: #58548d;
+  --text-color: #707070;
+  --body-color: #FBFEFD;
+  --white: #FFFFFF;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Raleway', sans-serif;
+  --biggest-font-size: 3.2rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+  --smaller-font-size: .813rem;
+
+  /*========== Font weight ==========*/
+  --font-bold: 800;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes ==========*/
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Font size for smaller screens ==========*/
+@media screen and (max-width: 768px){
+  :root{
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+  }
+}
+
+/*========== BASE ==========*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  line-height: 1.4;
+  margin: 0;
+}
+
+h1,h2,h3,p,ul{
+  margin: 0;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*========== LAYOUT ==========*/
+
+.container{
+    max-width: 960px;
+    width: calc(100% - 2rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-full{
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2); 
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+
+/*========== SECTION ==========*/
+.section{
+    padding-top: 8rem;
+}
+.section-subtitle{
+    display: block;
+    font-size: var(--h3-font-size);
+    color: var(--first-color);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-3);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.section-title{
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-1);
+}
+
+/*========== HOME ==========*/
+.home{
+    background-color: #b3dbfe;
+    background-image: url('./Assets/hero-img.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-position-y: bottom;
+}
+
+.home_container{
+    align-items: center;
+    display: flex;
+    height: 60vh;
+    justify-items: center;
+    padding: 10rem;
+    margin: 20px;
+}
+
+.home_title{
+    font-size : var(--h2-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    margin-bottom: var(--mb-1);
+    letter-spacing: 5px;
+    text-transform: capitalize;
+}
+
+.home_subtitle{
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-1);
+    border-left: 3px solid var(--first-color-alt);
+    padding-left: 1.5rem;
+    text-transform: capitalize;
+}
+
+/*========== BUTTONS ==========*/
+.Button{
+    text-transform: uppercase;
+    font-weight: var(--font-semi-bold);
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--title-color);
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--first-color);
+    border-radius: 5rem;
+    transition: .3s;
+}
+
+.Button:hover{
+    background-color: var(--second-color);
+    color: var(--first-color);
+}
+
+
+/*========== ABOUT US ==========*/
+.about_container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    column-gap: 7rem;
+}
+
+.about_data{
+    text-align: initial;
+}
+
+.about_description{
+    margin-bottom: var(--mb-3);
+}
+
+.about_cards{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+}
+
+.about_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem;
+    height: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(34,33,35,.15);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.hover-card-heading{
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-1);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.hover-card {
+    width: 100%;
+    height: 254px;
+    border-radius: 4px;
+    display: flex;
+    gap: 5px;
+    padding: .4em;
+  }
+  
+  .hover-card p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: var(--white);
+    border: 1px solid #ff5a91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hover-card p:hover {
+    flex: 4;
+  }
+  
+  .hover-card p span {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #ff568e;
+    letter-spacing: .1em;
+  }
+  
+  .hover-card p:hover span {
+    transform: rotate(0);
+  }
+
+
+  /*========== DETAILS ==========*/
+  .details_container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    column-gap: 7rem;
+  }
+
+  .details_data{
+    text-align: initial;
+  }
+
+  .details_description{
+    margin-bottom: var(--mb-5);
+  }
+
+
+  /*========== CONTACT US ============*/
+  .contact_container{
+    grid-template-columns: 2fr,1fr;
+    align-items: center;
+    column-gap: 7rem;
+  }
+
+  .contact_description{
+    margin-bottom: var(--mb-3);
+  }
+
+  .contact_button{
+    justify-self: center;
+
+  }
+
+
+
+  /*========== SCROLL TOP  ===========*/
+  .scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background-color: var(--first-color);
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    bottom: 1.5rem;
+  }
+
+  .scrolltop:hover{
+    background-color: var(--second-color);
+  }
+
+  .scrolltop_icon{
+    font-size: 5rem;
+    color: var(--white);
+  }

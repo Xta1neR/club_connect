@@ -1,29 +1,19 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
-import Home from './pages/Home/Home';
-import About from './pages/About/About';
-import Login from './pages/Login/Login';
-import Register from './pages/Register/Register';
-import Dashboard from './pages/Dashboard/Dashboard';
-import Profile from './pages/Profile/Profile';
+// import { Routes, Route } from 'react-router-dom';
+// import Navbar from './components/Navbar/Navbar';
+// import Home from './Pages/Home/Home';
+// import About from './Pages/About/About';
+// import Login from './Pages/Login/Login';
+// import Register from './Pages/Register/Register';
+// import Dashboard from './Pages/Dashboard/Dashboard';
+// import Profile from './Pages/Profile/Profile';
 
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-
-      <Switch>
-        <Route path="/" component={Home} />
-        <Route path="/Dashboard" component={Dashboard} />
-        <Route path="/profile" component={Profile} />
-        <Route path="/about" component={About} />
-        <Route path="/login" component={Login} />
-        <Route path="/register" component={Register} />
-      </Switch>
-
-    </div>
+    <>
+    { <h1>HELLO WORLD THIS IS CLUB CONNECT</h1> }
+    </>
   );
 };
 
