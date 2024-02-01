@@ -29,7 +29,7 @@ const Home = () => {
                 Lorem, ipsum dolor.
              </h3>
              <br />
-             <a href="#" class="Button">Learn More.</a>
+             <a href="#" class="Button">Register Now</a>
             </div>
           </div>
         </div>
