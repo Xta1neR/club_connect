@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { NavLink } from 'react-router-dom'
 
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -12,9 +13,18 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import CampaignIcon from '@mui/icons-material/Campaign';
 import "./Navbar.css"
 
+
+// import dashboard from "../../Pages/Dashboard/Dashboard";
+import home from "../../Pages/Home/Home";
+import register from "../../Pages/Register/Register";
+import login from "../../Pages/Login/Login";
+import profile from "../../Pages/Profile/Profile";
+import { Announcement, Login } from '@mui/icons-material';
+// import messages from "../../Pages/Messages/Messages";
+
 function Navbar(){
     return(
-        
+
         <AppBar position="static">
             <Toolbar>
                 <IconButton
@@ -31,15 +41,20 @@ function Navbar(){
                     Club Connect
                 </Typography>
 
-                <Button color="inherit"><HomeIcon/> Home</Button>
-                <Button color="inherit"><CampaignIcon/> Announcement</Button>
+                <NavLink to="/home"><HomeIcon /> Home</NavLink>
+                
+                <NavLink to="/home"><Announcement />Announcement</NavLink>
+
+                <NavLink to="/login"><Login/>Login</NavLink>
+
                 <div className="dropdown">
-                    <Button color="inherit" className ="dropbtn"> <AccountCircleIcon/> Profile
-                    </Button>
+                    <NavLink to="/profile"><Button color="inherit" className ="dropbtn"> <AccountCircleIcon/> Profile
+                    </Button></NavLink>
+
                     <div className="dropdown-content">
-                        <a href="#">Dashboard</a>
-                        <a href="#">Messages</a>
-                        <a href="#">Logout</a>
+                        <NavLink to="/dashboard">Dashboard</NavLink>
+                        {/* <NavLink to="/messages">Messages</NavLink> */}
+                        <NavLink to="/home">Logout</NavLink>
                     </div>
                 </div>
 
