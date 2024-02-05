@@ -1,19 +1,12 @@
-style="font-family: verdana, geneva, sans-serif;">/*  import google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
-*{
-  margin: 0;
-  padding: 0;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-body{
+
+.Dashboard{ 
   background: #dfe9f5;
+  width: 100%;
 }
-.container{
+.das-container{
   display: flex;
+  width: 100%;
 }
 nav{
   position: relative;
@@ -22,10 +15,11 @@ nav{
   height: 100vh;
   left: 0;
   background: #fff;
-  width: 280px;
+  width: 20%;
   overflow: hidden;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
+
 .logo{
   text-align: center;
   display: flex;
