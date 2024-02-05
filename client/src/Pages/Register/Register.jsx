@@ -7,10 +7,15 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 
 
+import Navbar from "../../component/Navbar/Navbar";
+import Footer from '../../component/Footer/footer';
+
 
 
 const Register = () => {
   return (
+<>
+    <Navbar/>
   
 <section class="register">
     <input type="checkbox" id="one"/>
@@ -111,7 +116,8 @@ const Register = () => {
     </div>
   </div>      
 </section>
-
+<Footer/>
+</>
   );
 };
 

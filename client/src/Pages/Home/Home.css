@@ -55,6 +55,27 @@
   }
 }
 
+/* For small screens */
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* For medium screens */
+@media (min-width: 601px) and (max-width: 900px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+/* For large screens */
+@media (min-width: 901px) {
+  body {
+    background-color: lightyellow;
+  }
+}
+
 /*========== BASE ==========*/
 *,::before,::after{
   box-sizing: border-box;

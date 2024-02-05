@@ -1,11 +1,13 @@
 import React from 'react';
-import './Dashboard.css'
+import './Dashboard.css';
+import Footer from '../../component/Footer/footer';
+
 
 function Dashboard() {
   return (
     <>
-    <body>
-  <div class="container">
+    <section className='Dashboard'>
+  <div class="das-w">
     <nav>
       <ul>
         <li><a href="#" class="logo">
@@ -46,6 +48,8 @@ function Dashboard() {
         </a></li>
       </ul>
     </nav>
+
+
     <section class="main">
       <div class="main-top">
         <h1>Skills</h1>
@@ -110,7 +114,7 @@ function Dashboard() {
       </section>
     </section>
   </div>
-</body>
+</section>
     </>
   )
 }
