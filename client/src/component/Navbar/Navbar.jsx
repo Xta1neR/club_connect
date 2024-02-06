@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -42,8 +42,6 @@ function Navbar(){
                 </Typography>
 
                 <NavLink to="/home"><HomeIcon /> Home</NavLink>
-                
-                <NavLink to="/home"><Announcement />Announcement</NavLink>
 
                 <NavLink to="/login"><Login/>Login</NavLink>
 

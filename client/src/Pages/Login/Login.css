@@ -65,6 +65,10 @@
     border-color: #fff;
 }
 
+#mobile_register{
+    display: none;
+}
+
 .container_logs form{
     background-color: #fff;
     display: flex;
@@ -207,4 +211,22 @@
 
 .container_logs.active .toggle-right{
     transform: translateX(200%);
+}
+
+
+@media screen and (max-width: 700px){
+    .toggle-container_logs{
+        display: none;
+    }
+
+    .login_page{
+        width: 100%;
+        height: 90%;
+    }
+    .container_logs{
+        width: 95%;
+    }
+    .form-container_logs{
+        width:100%
+    }
 }

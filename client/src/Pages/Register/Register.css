@@ -243,6 +243,33 @@
     color: #A957CB;
 }
 
+@media screen and (max-width: 1000px){
+    .container_register{
+        width: 100%;
+    }
+    .panel{
+        width: 70%;
+    }
+    .page1{
+        width: 100%;
+    }
+    .page2{
+        width: 100%;
+        left: 100%;
+    }
+    .page3{
+        width: 100%;
+        left: 200%;
+    }
+    #one:checked ~ .container_register .panel{
+        left: -100%;
+    }
+    
+    #two:checked ~ .container_register .panel{
+        left: -200%;
+    }
+}
+
 
 
 

@@ -1,18 +1,27 @@
 import React from 'react';
-// import { Routes, Route } from 'react-router-dom';
-// import Navbar from './components/Navbar/Navbar';
-// import Home from './Pages/Home/Home';
-// import About from './Pages/About/About';
-// import Login from './Pages/Login/Login';
-// import Register from './Pages/Register/Register';
-// import Dashboard from './Pages/Dashboard/Dashboard';
-// import Profile from './Pages/Profile/Profile';
+import {BrowserRouter, Routes, Route}  from 'react-router-dom';
+
+import Home from './Pages/Home/Home.jsx'
+import Login from './Pages/Login/Login.jsx'
+import Register from './Pages/Register/Register.jsx'
+import Dashboard from './Pages/Dashboard/Dashboard.jsx'
 
 
 const App = () => {
   return (
     <>
-    { <h1>HELLO WORLD THIS IS CLUB CONNECT</h1> }
+    {/* <Navbar/> */}
+    <Routes>
+
+      <Route path="/" element={<Home/>} />
+      <Route path="/home" element={<Home/>} />
+      
+      <Route path="/login" element={<Login/>} />
+      <Route path="/register" element={<Register/>} />
+      <Route path="/dashboard" element={<Dashboard/>} />
+
+    </Routes>
+    {/* <Footer/> */}
     </>
   );
 };
