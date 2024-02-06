@@ -30,6 +30,7 @@ const Login = () => {
                 <input type="password" placeholder="Password"/>
                 <a href="#">Forget Your Password?</a>
                 <button>Sign In</button>
+                <button id="mobile_register">Register Now</button>
             </form>
         </div>
 

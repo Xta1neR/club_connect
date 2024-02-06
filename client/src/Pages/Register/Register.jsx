@@ -13,6 +13,11 @@ import Footer from '../../component/Footer/footer';
 
 
 const Register = () => {
+
+    const registerUser = (e) => {
+        e.preventDefault();
+        }
+
   return (
 <>
     <Navbar/>
@@ -41,9 +46,10 @@ const Register = () => {
   
     </div>
 
+   
     <div class="panel">
         <div class="page1">
-            <form action="#" class="form">
+            <form onSubmit={registerUser} action="#" class="form">
                 <h2>Basic Information</h2>
                 <div class="form-group">
                     <input type="text" required/>
@@ -54,16 +60,16 @@ const Register = () => {
                     <label for="">Registration Number</label>
                 </div>
                 <div class="form-group">
-                    <input type="text" required/>
-                    <label for="">Gender</label>
-                </div>
-                <div class="form-group">
-                    <input type="text" required/>
+                    <input type="tel" required/>
                     <label for="">Whatsapp Number </label>
                 </div>
                 <div class="form-group">
-                    <input type="text" required/>
+                    <input type="email" required/>
                     <label for="">Email Address</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" required/>
+                    <label for="">Password</label>
                 </div>
                 
 
@@ -82,7 +88,7 @@ const Register = () => {
                     <label for="">Organization Name</label>
                 </div>
                 <div class="form-group">
-                    <input type="number" required/>
+                    <input type="text" required/>
                     <label for="">Domain Name</label>
                 </div>
                 <div class="btn-group">
