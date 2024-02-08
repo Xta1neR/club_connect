@@ -14,11 +14,13 @@ import CampaignIcon from '@mui/icons-material/Campaign';
 import "./Navbar.css"
 
 
-// import dashboard from "../../Pages/Dashboard/Dashboard";
+import dashboard from "../../Pages/Dashboard/Dashboard";
 import home from "../../Pages/Home/Home";
 import register from "../../Pages/Register/Register";
 import login from "../../Pages/Login/Login";
 import profile from "../../Pages/Profile/Profile";
+
+
 import { Announcement, Login } from '@mui/icons-material';
 // import messages from "../../Pages/Messages/Messages";
 

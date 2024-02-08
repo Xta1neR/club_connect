@@ -1,5 +1,7 @@
 import React from 'react';
 import './Home.css';
+import { useNavigate } from 'react-router-dom';
+
 import Navbar from "../../component/Navbar/Navbar";
 import Footer from '../../component/Footer/footer';
 import Button from "@mui/material/Button";
@@ -11,7 +13,10 @@ import aboutCard4 from "./Assets/aboutCard4.png";
 import detailsImg from "./Assets/detailsImg.png";
 import contactus from "./Assets/contactus.png";
 
+
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <Navbar />
@@ -29,7 +34,7 @@ const Home = () => {
                 Lorem, ipsum dolor.
              </h3>
              <br />
-             <a href="#" class="Button">Register Now</a>
+             <button className='Button' onClick={() => navigate("/register")}>Register Now</button>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ const {mongoose} = require('mongoose');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv').config();
 const cors = require('cors');
+const cookieParse = require('cookie-parser');
 
 // Database connection
 
@@ -18,7 +19,8 @@ const app = express();
 
 // Middleware
 app.use(express.json())
-
+app.use(cookieParse())
+app.use(express.urlencoded({extended: false}))
 
 
 app.use('/', require('./routes/authRoutes'))
