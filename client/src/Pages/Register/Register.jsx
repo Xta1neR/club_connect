@@ -39,7 +39,7 @@ const Register = () => {
             } else{
                 setData({})
                 toast.success('User Registered')
-                navigate('./login')
+                navigate('/login')
             }
         } catch (error) {
             console.log(error)

@@ -10,7 +10,7 @@ import Home from './Pages/Home/Home.jsx'
 import Login from './Pages/Login/Login.jsx'
 import Register from './Pages/Register/Register.jsx'
 import Dashboard from './Pages/Dashboard/Dashboard.jsx'
-
+import ErrorPage from './component/ErrorPage/errorpage.jsx'
 
 const App = () => {
   return (
@@ -25,6 +25,7 @@ const App = () => {
       <Route path="/login" element={<Login/>} />
       <Route path="/register" element={<Register/>} />
       <Route path="/dashboard" element={<Dashboard/>} />
+      <Route path="*" element={<ErrorPage />} />
 
     </Routes>
     {/* <Footer/> */}

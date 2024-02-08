@@ -1,12 +1,12 @@
 const User = require('../models/User');
 const {hashPassword, comparePassword} = require('../helpers/auth');
+const jwt = require('jsonwebtoken');
 
 const test = (req, res) => {
 	res.json('test route is chal raha hai');
 }
 
 //REGISTRATION API 
-
 const registerUser = async (req, res) => {
 	try {
 		const{name, regno, number, email, password, orgName, domainName, slot} = req.body;
@@ -32,6 +32,7 @@ const registerUser = async (req, res) => {
 		}
 
 		const hashedPassword = await hashPassword(password);
+		
 		// Create a user in database.
 		const user = await User.create({name, regno, number, email, password: hashedPassword, orgName, domainName, slot});
 
@@ -46,6 +47,7 @@ const registerUser = async (req, res) => {
 
 // LOGIN API
 const loginUser = async (req, res) => {
+	// console.log("during Login",email,password)
 	try {
 		const {email, password} = req.body;
 
@@ -60,7 +62,20 @@ const loginUser = async (req, res) => {
 		// Check if password is correct ya galat
 		const match = await comparePassword(password, user.password);
 		if(match){
+			// create jwt token
+			jwt.sign({email: user.email, id: user._id, name: user.name}, process.env.JWT_SECRET, {}, (err, token) => {
+				if(err) throw err;
+				res.cookie('token', token).json({
+					token,
+					user
+				})
+			})
 			return res.json('password matched');
+		}
+		if (!match){
+			return res.json({
+				error: 'Wrong Password'
+			})
 		}
 	} catch (error) {
 		console.log(error);
