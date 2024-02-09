@@ -1,0 +1,75 @@
+/* profile.css */
+
+.emp-profile {
+		/* position: absolute; */
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	padding: 10px;
+	width: 80%;
+	top: 0;
+  }
+  
+  .row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+  }
+  
+  .col-md-4,
+  .col-md-8 { 
+	margin: 50px; 
+  }
+  
+  .profile-img {
+	margin-bottom: 20px;
+	text-align: center; /* Center the image within its container */
+  }
+  
+  .profile-img img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover; 
+  }
+  
+  .profile-head h5 {
+	font-weight: bold;
+	text-align: center; /* Keep headings centered */
+  }
+  
+  .profile-edit-btn { 
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 15px; 
+  }
+  
+  /* Styling for tabs */
+  .nav-tabs {
+	border-bottom: 1px solid #ddd; /* Example tab border */
+  }
+  
+  .nav-tabs .nav-link {
+	border: 1px solid transparent; 
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
+  }
+  
+  .nav-tabs .nav-link.active { 
+	background-color: #eee; /* or your desired active tab color */
+	border-color: #ddd #ddd transparent;
+  }
+  
+  /* Styles for social links, soft skills, etc. */
+  .profile-work {
+	/* Your styles here */
+  } 
+  
+  .about-info {
+	/* Your styles here */
+  } 
+  

@@ -22,7 +22,6 @@ import profile from "../../Pages/Profile/Profile";
 
 
 import { Announcement, Login } from '@mui/icons-material';
-// import messages from "../../Pages/Messages/Messages";
 
 function Navbar(){
     return(
@@ -46,17 +45,6 @@ function Navbar(){
                 <NavLink to="/home"><HomeIcon /> Home</NavLink>
 
                 <NavLink to="/login"><Login/>Login</NavLink>
-
-                <div className="dropdown">
-                    <NavLink to="/profile"><Button color="inherit" className ="dropbtn"> <AccountCircleIcon/> Profile
-                    </Button></NavLink>
-
-                    <div className="dropdown-content">
-                        <NavLink to="/dashboard">Dashboard</NavLink>
-                        {/* <NavLink to="/messages">Messages</NavLink> */}
-                        <NavLink to="/home">Logout</NavLink>
-                    </div>
-                </div>
 
             </Toolbar>
         </AppBar>
