@@ -1,0 +1,30 @@
+.sidebar{
+	width: 15vw;
+	position: fixed;
+	height: 100vh;
+}
+
+.sidebar ul li a {
+	display: flex; 
+	align-items: center; 
+	margin-bottom: 15px; 
+}
+  
+  .sidebar ul li a,
+  .sidebar ul li .nav-link {
+	display: flex; 
+	align-items: center; 
+	font-weight: 700;
+	color: rgb(91, 91, 208); 
+  }
+  
+  .sidebar ul li .nav-link.active {
+	font-weight: bold; 
+  }
+
+  .fa_icons{
+	margin-right: 20px; 
+}
+
+
+  

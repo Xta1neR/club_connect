@@ -12,7 +12,7 @@ import aboutCard3 from "./Assets/aboutCard3.png";
 import aboutCard4 from "./Assets/aboutCard4.png";
 import detailsImg from "./Assets/detailsImg.png";
 import contactus from "./Assets/contactus.png";
-
+import {toast} from 'react-hot-toast';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -20,6 +20,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
+     
       
       <section className="home" id='home'>   
       <br />
@@ -115,7 +116,7 @@ const Home = () => {
         </div>
 
         <div className="contact_button">
-          <a href="#" class="Button">Contact Us Now</a>
+          <a href="#" class="Button" >Contact Us Now</a>
         </div>
       </div>
     </section>

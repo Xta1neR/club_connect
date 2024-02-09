@@ -16,39 +16,6 @@
   
 
     
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-
-
-
 .das-container{
   display: flex;
   width: 100%;
@@ -70,24 +37,28 @@ nav{
   display: flex;
   margin: 10px 0 0 10px;
 }
+
 .logo img{
   width: 45px;
   height: 45px;
   border-radius: 50%;
 }
+
 .logo span{
   font-weight: bold;
   padding-left: 15px;
   font-size: 18px;
   text-transform: uppercase;
 }
+
 a{
   position: relative;
-  color: rgb(85, 83, 83);
+  color: black;
   font-size: 14px;
   display: table;
-  width: 280px;
+  width: 20%;
   padding: 10px;
+  text-align: center;
 }
 nav .fas{
   position: relative;

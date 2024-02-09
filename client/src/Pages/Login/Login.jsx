@@ -73,7 +73,7 @@ const Login = () => {
                                 placeholder="Email"
                                 required
                                 value={data.email}
-                                onClick={handleEmailChange}
+                                onChange={handleEmailChange}
                             />
 
                             <input
@@ -81,7 +81,7 @@ const Login = () => {
                                 placeholder="Password"
                                 required
                                 value={data.password}
-                                onClick={handlePasswordChange}
+                                onChange={handlePasswordChange}
                             />
 
                             <a href="#">Forget Your Password?</a>

@@ -1,6 +1,7 @@
 const User = require('../models/User');
 const {hashPassword, comparePassword} = require('../helpers/auth');
 const jwt = require('jsonwebtoken');
+const axios = require('axios');
 
 const test = (req, res) => {
 	res.json('test route is chal raha hai');
