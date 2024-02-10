@@ -4,6 +4,16 @@
 
 ## Project Name : Club Connect
 
+### Deployment Links
+**Server Deployment :** https://club-connect.onrender.com/
+<br/>
+**FrontEnd Deployment :** https://clubc0nnect.netlify.app/
+<br/>
+**API Docuentations :** https://documenter.getpostman.com/view/32332313/2s9YymJRMd
+<br/>
+**DEMO VIDEO :** [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/D1F5uiEsqqQ/0.jpg)](https://www.youtube.com/watch?v=D1F5uiEsqqQ)
+<br/>
+
 ### STRUCTURE
 The main framework behind solving the problem statement is as below : 
 
