@@ -6,9 +6,13 @@
 
 ### Deployment Links
 **Server Deployment :** https://club-connect.onrender.com/
+<br/>
 **FrontEnd Deployment :** https://clubc0nnect.netlify.app/
+<br/>
 **API Docuentations :** https://documenter.getpostman.com/view/32332313/2s9YymJRMd
+<br/>
 **DEMO VIDEO :** [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/D1F5uiEsqqQ/0.jpg)](https://www.youtube.com/watch?v=D1F5uiEsqqQ)
+<br/>
 
 ### STRUCTURE
 The main framework behind solving the problem statement is as below : 
@@ -66,11 +70,3 @@ The above Flowchart explains what is the hierarchy of Student Organization Clubs
 
 - **Group Announcement** : Domain heads can make an announcement in their Domain group.
 - **Group Announcement** : CEOs can make an announcement to all the Domain groups.
-
-
-<<<<<<< HEAD
-=======
-
-
-DEMO VIDEO : [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/D1F5uiEsqqQ/0.jpg)](https://www.youtube.com/watch?v=D1F5uiEsqqQ)
->>>>>>> 8ddce9e334e4fe74c40ba8540c9ba10af3894308
