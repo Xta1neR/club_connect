@@ -27,10 +27,10 @@ app.use(express.urlencoded({extended: false}))
 
 
 app.use('/', require('./routes/authRoutes'))
-app.post("/authenticate", async (req, res) => {
-  const { username } = req.body;
-  return res.json({ username: username, secret: "sha256..." });
-});
+// app.post("/authenticate", async (req, res) => {
+//   const { username } = req.body;
+//   return res.json({ username: username, secret: "sha256..." });
+// });
 
 const port = 8000;
 app.listen(port, () => {
