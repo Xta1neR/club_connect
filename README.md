@@ -68,3 +68,9 @@ The above Flowchart explains what is the hierarchy of Student Organization Clubs
 - **Group Announcement** : CEOs can make an announcement to all the Domain groups.
 
 
+<<<<<<< HEAD
+=======
+
+
+DEMO VIDEO : [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/D1F5uiEsqqQ/0.jpg)](https://www.youtube.com/watch?v=D1F5uiEsqqQ)
+>>>>>>> 8ddce9e334e4fe74c40ba8540c9ba10af3894308
