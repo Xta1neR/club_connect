@@ -4,7 +4,7 @@ import axios from 'axios';
 import {Toaster} from 'react-hot-toast';
 import {useState} from 'react';
 
-axios.defaults.baseURL = 'http://localhost:8000';
+axios.defaults.baseURL = 'https://club-connect.onrender.com';
 axios.defaults.withCredentials = true;
 
 import Home from './Pages/Home/Home.jsx'
